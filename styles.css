@@ -1,0 +1,284 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background:#f9f9f9;
+}
+
+/* ===== HEADER ===== */
+
+header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 20px;
+    height:60px;
+    background:white;
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+}
+
+.left-header{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.menu-icon{
+    font-size:22px;
+    cursor:pointer;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    font-weight:600;
+    font-size:50px;
+}
+
+.logo img{
+    width:100px;
+    margin-right:5px;
+}
+.country{
+    font-size: 10px;
+    color: gray;
+    margin-left: 2px;
+   
+    font-weight: normal;
+}
+/* SEARCH */
+
+.search-bar{
+    display:flex;
+    align-items:center;
+    width:50%;
+}
+
+.search-bar input{
+    flex: 1;
+    width:100%;
+    padding:10px 15px;
+    border:1px solid #ccc;
+    border-right: none;
+    border-radius:20px 0 0 20px;
+    outline:none;
+    height:40px;
+    font-size: medium;
+}
+
+.search-btn{
+    padding:0 20px;
+    border:1px solid #ccc;
+    border-left:none;
+    border-radius:0 20px 20px 0;
+    background:#f8f8f8;
+    cursor:pointer;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 60px;
+}
+
+.search-btn img{
+    width: 20px;
+    height: 36px;
+
+    display:flex;
+    align-items:center;
+    
+}
+/* RIGHT HEADER */
+
+.right-header{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.circle{
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    background:#ddd;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:500;
+}
+
+/* ===== SIDEBAR ===== */
+
+.sidebar{
+    width:230px;
+    background:white;
+    height:100vh;
+    position:fixed;
+    top:60px;
+    left:0;
+    padding-top:20px;
+    border-right:1px solid #eee;
+    overflow-y:auto; 
+     overflow-x: hidden;
+
+    scrollbar-width: thin;
+
+   
+                
+   
+}
+
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar li{
+    padding:12px 25px;
+    display:flex;
+    align-items:center;
+    gap:15px;
+    cursor:pointer;
+}
+
+.sidebar li:hover{
+    background:#f2f2f2;
+}
+
+.sidebar .active{
+    background:#e5e5e5;
+    border-radius:10px;
+}
+.sidebar-item{
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.sidebar-item:hover{
+    background-color: #f2f2f2;
+}
+.search-bar.active{
+    background-color: #e5e5e5;
+    font-weight: 500;
+}
+/* ===== MAIN CONTENT ===== */
+
+/* MAIN */
+
+main{
+    margin-left:230px;
+    margin-top:60px;
+    padding:20px 25px;
+}
+
+/* CATEGORY CHIPS */
+
+.chips{
+    display:flex;
+    gap:10px;
+    overflow-x:auto;
+    padding-bottom:15px;
+}
+
+.chip{
+    background:#eee;
+    padding:7px 14px;
+    border-radius:10px;
+    white-space:nowrap;
+    font-size:14px;
+}
+
+.chip.active{
+    background:black;
+    color:white;
+}
+
+/* VIDEO GRID */
+
+.video-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:20px;
+}
+
+.video-card{
+    cursor:pointer;
+}
+
+.thumbnail{
+    width:100%;
+    border-radius:12px;
+}
+
+.video-info{
+    display:flex;
+    gap:10px;
+    margin-top:8px;
+}
+
+.channel-icon{
+    width:36px;
+    height:36px;
+    border-radius:50%;
+    background:#ccc;
+}
+
+.video-title{
+    font-size:14px;
+    font-weight:500;
+}
+
+.video-meta{
+    font-size:12px;
+    color:#666;
+}
+
+/* SHORTS */
+
+.shorts{
+    margin-top:40px;
+}
+
+.shorts h3{
+    margin-bottom:15px;
+}
+
+.shorts-row{
+    display:flex;
+    gap:15px;
+}
+
+.short-card{
+    width:160px;
+    height:260px;
+    background:#ddd;
+    border-radius:12px;
+}
+
+
+/* ===== RESPONSIVE ===== */
+
+@media(max-width:900px){
+    .sidebar{
+        display:none;
+    }
+
+    main{
+        margin-left:0;
+    }
+
+    .search-bar{
+        width:70%;
+    }
+}
