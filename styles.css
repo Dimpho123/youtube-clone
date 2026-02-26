@@ -382,3 +382,31 @@ main{
 html{
     scroll-behavior: smooth;
 }
+
+/* Styling the .channel-icon */
+.channel-icon img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.channel-icon {
+  margin-right: 10px;
+}
+
+/* Styling the shorst header */
+ .shorts-header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+ }
+ .shorts-header img{
+    width: 24px;
+    height: 24px;
+ }
+ .shorts-header h2{
+    font-size: 20px;
+    margin: 0;
+ }
