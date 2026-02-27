@@ -132,10 +132,6 @@ header{
     overflow-x: hidden;
     scrollbar-width: thin;
     font-size: 15px;
-
-   
-                
-   
 }
 
 
@@ -410,3 +406,57 @@ html{
     font-size: 20px;
     margin: 0;
  }
+
+
+ /* sidebar section */
+ .sidebar-section {
+  padding: 12px 0;
+  border-bottom: 1px solid #e5e5e5;
+  width: 220px;
+  font-family: Roboto, Arial, sans-serif;
+}
+
+.sidebar-title {
+  display: flex;
+  align-items: center; /* vertical center */
+  gap: 6px;
+  font-weight: 500;
+  padding: 8px 24px;
+}
+
+.arrow {
+  font-size: 25px;
+  color:black;
+  margin-left: 6px;
+  line-height: 1;
+  transform: translateY(-2px); /* 👈 key fix */
+}
+
+/* Styling the ffoter */
+.footer {
+    padding: 15px;
+    font-size: 13px;
+    color:#606060;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 10px;
+    }
+
+    .footer-links a {
+        text-decoration: none;
+        color:#606060;
+        font-weight: 500;
+    }
+
+    .footer-links a:hover{
+        text-decoration: none;
+    }
+
+    .copyright {
+        font-size: 12px;
+        color: #909090;
+    }
